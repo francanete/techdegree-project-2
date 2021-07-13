@@ -5,6 +5,7 @@
     <title>Fran Canete's Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
 </head>
@@ -18,14 +19,16 @@
                 <li>Contact</li>
             </ul>
         </nav>
+    </header>
+
+    <main class="main-container">
+
         <!-- Profile -->
         <div>
             <img src="images/responsive-layout-profile.png" alt="profile image" class="profile-img">
             <p>Hi! I'm Fran, a Frontend Developer who loves responsive design and css. I recently finished a degree in Web Development at Treehouse and am excited to pull all my skills to use!</p>
         </div>
-    </header>
 
-    <main>
         <!-- Portfolio section -->
         <section class="project-section">
             <h2>PORTFOLIO</h2>
@@ -65,22 +68,23 @@
                 <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
             </div>
         </section>
-        <!-- Contact section -->
-        <section class="contact">
-            <h3>CONTACT</h3>
-            <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
-            <p>Phone: <strong>+44 777 777 777</strong></p>
-            <p>Email: <strong><a href="mailto:hello@francanete.com">hello@francanete.com</a>></strong></p>
-        </section>
-
     </main>
 
     <footer>
-        <hr class="solid" id="footer-divider">
-        <div class="footer-section">
-            <p class="footer-item">Fran Canete</p>
-            <p class="footer-item"><a href="#top">BACK TO TOP</a></p>
-         </div>
+        <div class="footer-container">
+            <!-- Contact section -->
+            <section class="contact">
+                <h3>CONTACT</h3>
+                <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
+                <p>Phone: <strong>+44 777 777 777</strong></p>
+                <p>Email: <strong><a href="mailto:hello@francanete.com">hello@francanete.com</a>></strong></p>
+            </section>
+            <hr class="solid" id="footer-divider">
+            <div class="footer-section">
+                <p class="footer-item">Fran Canete</p>
+                <p class="footer-item"><a href="#top">BACK TO TOP</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

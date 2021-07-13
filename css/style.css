@@ -7,9 +7,16 @@ body {
     padding: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
     color: rgb(68, 68, 68);
+    font-weight: 300;
     background: #f7f7f7;
 }
+
+img {
+    width: 100%;
+}
+
 
 .nav-items {
     list-style: none;
@@ -24,16 +31,14 @@ body {
     background-color: #ffffff;
 }
 
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .profile-img {
     align-content: center;
     width: 60%;
-}
-
-p {
-    font-weight: 300;
-    margin-left: 15px;
-    margin-right: 15px;
-    line-height: 1.5;
 }
 
 .project-section {
@@ -44,10 +49,13 @@ p {
     margin-bottom: 15%;
 }
 
-.project img {
-    width: 90%;
-}
 
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5% 5px;
+    background-color: #dfdfdf;
+}
 
 #footer-divider {
     margin: 40px 10px 10px;
@@ -59,8 +67,8 @@ p {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
+
 .footer-item {
     font-size: .8rem;
     font-weight:bold;
@@ -71,3 +79,8 @@ p {
     color:rgb(68, 68, 68);
     text-decoration:none;
 }
+
+
+/* =====================
+    Media Queries
+===================== */
