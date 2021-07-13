@@ -10,13 +10,19 @@ body {
     line-height: 1.5;
     color: rgb(68, 68, 68);
     font-weight: 300;
-    background: #f7f7f7;
+    background: #f8f8f8;
 }
 
 img {
     width: 100%;
 }
 
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5% 5%;
+    background-color: #e4e4e4;
+}
 
 .nav-items {
     list-style: none;
@@ -36,9 +42,15 @@ img {
     margin: 0 auto;
 }
 
+.profile-container {
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
 .profile-img {
     align-content: center;
-    width: 60%;
+    width: 75%;
+    margin-bottom: 40px;
 }
 
 .project-section {
@@ -52,15 +64,22 @@ img {
 
 .footer-container {
     width: 100%;
-    margin: 0 auto;
-    padding: 10px 5% 5px;
+    margin:  auto;
+    padding: 10px 5% 2rem;
     background-color: #dfdfdf;
 }
 
-#footer-divider {
-    margin: 40px 10px 10px;
-    border-top: 1px solid rgb(197, 197, 197);
+.contact {
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
 
+.contact p {
+    margin-bottom: 1.5rem;
+}
+
+#footer-divider {
+    border-top: 1px solid rgb(197, 197, 197);
 }
 
 .footer-section{
@@ -80,7 +99,80 @@ img {
     text-decoration:none;
 }
 
+.main-nav.footer {
+    display: none;
+}
+
 
 /* =====================
     Media Queries
 ===================== */
+
+@media screen and (min-width: 768px) {
+    
+    .nav-items {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-items li {
+        background-color: transparent;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        margin: 0 40px;
+    }
+    .profile-img {
+        width: 40%;
+        margin-bottom: 0;
+    }
+    
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .project {
+        width: 48%;
+    }
+    .contact {
+        max-width: 75%;
+    }
+    .main-nav.footer {
+        display: block;
+        font-size: .8rem;
+    }
+
+    .footer-section{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .footer-item.top {
+        display:none;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .profile-container {
+        align-items:flex-start;
+        gap: 40px;
+    }
+    .project {
+        width: 32%;
+    }
+}

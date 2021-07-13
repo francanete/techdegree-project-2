@@ -11,61 +11,63 @@
 </head>
 <body>
     <header>
-        <h1 id="top">Fran Canete</h1>
-        <nav class="main-nav">
-            <ul class="nav-items">
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1 id="top">Fran Canete</h1>
+            <nav class="main-nav">
+                <ul class="nav-items">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Profile -->
+            <div class="profile-container">
+                <img src="images/responsive-layout-profile.png" alt="profile image" class="profile-img">
+                <p>Hi! I'm Fran, a Frontend Developer who loves responsive design and css. I recently finished a degree in Web Development at Treehouse and am excited to pull all my skills to use!</p>
+            </div>
+        </div>
     </header>
 
     <main class="main-container">
 
-        <!-- Profile -->
-        <div>
-            <img src="images/responsive-layout-profile.png" alt="profile image" class="profile-img">
-            <p>Hi! I'm Fran, a Frontend Developer who loves responsive design and css. I recently finished a degree in Web Development at Treehouse and am excited to pull all my skills to use!</p>
-        </div>
-
         <!-- Portfolio section -->
         <section class="project-section">
-            <h2>PORTFOLIO</h2>
-            <div class="project">
-                <img src="images/portfolio-1.png" alt="portfolio 1">
-                <h3>Marketing Page</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
+            <h2 id="portfolio">PORTFOLIO</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="images/portfolio-1.png" alt="portfolio 1">
+                    <h3>Marketing Page</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
 
-            <div class="project">
-                <img src="images/portfolio-2.png" alt="portfolio 1">
-                <h3>Search Page</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
+                <div class="project">
+                    <img src="images/portfolio-2.png" alt="portfolio 2">
+                    <h3>Search Page</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
 
-            <div class="project">
-                <img src="images/portfolio-3.png" alt="portfolio 1">
-                <h3>Travel App</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
+                <div class="project">
+                    <img src="images/portfolio-3.png" alt="portfolio 3">
+                    <h3>Travel App</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
 
-            <div class="project">
-                <img src="images/portfolio-4.png" alt="portfolio 1">
-                <h3>Map of Favourite Spots</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
+                <div class="project">
+                    <img src="images/portfolio-4.png" alt="portfolio 4">
+                    <h3>Map of Favourite Spots</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
 
-            <div class="project">
-                <img src="images/portfolio-5.png" alt="portfolio 1">
-                <h3>Photo Gallery</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
-            </div>
-
-            <div class="project">
-                <img src="images/portfolio-6.png" alt="portfolio 1">
-                <h3>Calculator</h1>
-                <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                <div class="project">
+                    <img src="images/portfolio-5.png" alt="portfolio 5">
+                    <h3>Photo Gallery</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio-6.png" alt="portfolio 6">
+                    <h3>Calculator</h1>
+                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -74,15 +76,22 @@
         <div class="footer-container">
             <!-- Contact section -->
             <section class="contact">
-                <h3>CONTACT</h3>
-                <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
+                <h3 id="contact">CONTACT</h3>
+                <p >If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
                 <p>Phone: <strong>+44 777 777 777</strong></p>
                 <p>Email: <strong><a href="mailto:hello@francanete.com">hello@francanete.com</a>></strong></p>
             </section>
             <hr class="solid" id="footer-divider">
             <div class="footer-section">
                 <p class="footer-item">Fran Canete</p>
-                <p class="footer-item"><a href="#top">BACK TO TOP</a></p>
+                <p class="footer-item top" id="back-to-top"><a href="#top">BACK TO TOP</a></p>
+                <nav class="main-nav footer">
+                    <ul class="nav-items">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>
