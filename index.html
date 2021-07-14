@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1 id="top">Fran Canete</h1>
-            <nav class="main-nav">
-                <ul class="nav-items">
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="top-menu">
+                <h1 id="top">Fran Canete</h1>
+                <nav class="main-nav">
+                    <ul class="nav-items top">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <!-- Profile -->
             <div class="profile-container">
                 <img src="images/responsive-layout-profile.png" alt="profile image" class="profile-img">
-                <p>Hi! I'm Fran, a Frontend Developer who loves responsive design and css. I recently finished a degree in Web Development at Treehouse and am excited to pull all my skills to use!</p>
+                <p>Hi! I'm Fran, a front-end Developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to pull all my skills to use!</p>
             </div>
         </div>
     </header>
@@ -37,38 +41,56 @@
                 <div class="project">
                     <img src="images/portfolio-1.png" alt="portfolio 1">
                     <h3>Marketing Page</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
                 </div>
 
                 <div class="project">
                     <img src="images/portfolio-2.png" alt="portfolio 2">
                     <h3>Search Page</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>This project searches through a specific database to find informaton that the user is trying to look up.</p>
                 </div>
 
                 <div class="project">
                     <img src="images/portfolio-3.png" alt="portfolio 3">
                     <h3>Travel App</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
                 </div>
 
                 <div class="project">
                     <img src="images/portfolio-4.png" alt="portfolio 4">
                     <h3>Map of Favourite Spots</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>This project uses mapping apis to plot points for my favorite sports in the city for a do-it-yourself walking tour.</p>
                 </div>
 
                 <div class="project">
                     <img src="images/portfolio-5.png" alt="portfolio 5">
                     <h3>Photo Gallery</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
                 </div>
                 <div class="project">
                     <img src="images/portfolio-6.png" alt="portfolio 6">
                     <h3>Calculator</h1>
-                    <p>This project shows the fron page of a marketing website meant for a specific business I'm interested in.</p>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Skills section -->
+        <section>
+            <h2 id="skills">SKILLS</h2>
+            <div class="skills-container">
+                <img src="images/fran-skills.jpg" alt="These are Fran's skills">
+                <div class="skills-item">
+                    <p>On my jourmney as a student at Treehouse Tecdegree I acquired a valuable and diverse skill set that give me the ability to perform as a front-end developer. These are the main skills:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -77,7 +99,7 @@
             <!-- Contact section -->
             <section class="contact">
                 <h3 id="contact">CONTACT</h3>
-                <p >If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
+                <p >If you'r interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                 <p>Phone: <strong>+44 777 777 777</strong></p>
                 <p>Email: <strong><a href="mailto:hello@francanete.com">hello@francanete.com</a>></strong></p>
             </section>
@@ -87,9 +109,10 @@
                 <p class="footer-item top" id="back-to-top"><a href="#top">BACK TO TOP</a></p>
                 <nav class="main-nav footer">
                     <ul class="nav-items">
-                        <li>Home</li>
-                        <li>Portfolio</li>
-                        <li>Contact</li>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>

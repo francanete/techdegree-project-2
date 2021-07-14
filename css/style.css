@@ -13,15 +13,30 @@ body {
     background: #f8f8f8;
 }
 
+h2 {
+    font-family: 'Bowlby One SC';
+}
+
 img {
     width: 100%;
+}
+
+a:hover {
+    transform: scale(1.5);
 }
 
 .header-container {
     width: 100%;
     margin: 0 auto;
     padding: 10px 5% 5%;
-    background-color: #e4e4e4;
+    background-color: #2f3363;
+}
+#top {
+    color: white;
+}
+
+.header-container p {
+    color: white;
 }
 
 .nav-items {
@@ -34,7 +49,7 @@ img {
     text-transform: uppercase;
     margin: 5px 10px;
     padding: 5px 10px 10px 10px;
-    background-color: #ffffff;
+    background-color: #e0e2ff;
 }
 
 .main-container {
@@ -59,6 +74,26 @@ img {
 
 .project {
     margin-bottom: 15%;
+}
+
+.skills-container {
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+.skills-container img {
+    margin-bottom: 30px;
+}
+
+.skills-container li {
+    display: block;
+    list-style: none;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -119,6 +154,12 @@ img {
         background-color: transparent;
     }
 
+    .nav-items.top a {
+        color: white;
+        transform: scale (1.5);
+    }
+
+
     .profile-container {
         display: flex;
         flex-direction: row-reverse;
@@ -143,8 +184,39 @@ img {
         gap: 0px;
     }
     .project {
-        width: 48%;
+        width: 49%;
     }
+
+    .skills-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        font-size: 1.2rem;    
+    }
+
+    .skills-item li {
+        display: inline-block;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .skills-container p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-container img {
+        width: 45%;
+    }
+
+    .skills-item {
+        display: block;
+        text-align: center;
+    }
+
     .contact {
         max-width: 75%;
     }
@@ -168,11 +240,25 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+    
+    .top-menu {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     .profile-container {
         align-items:flex-start;
         gap: 40px;
     }
     .project {
         width: 32%;
+    }
+    .project p {
+        margin: 0 20px;
+    }
+    .contact {
+        max-width: 60%;
     }
 }
