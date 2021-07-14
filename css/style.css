@@ -20,9 +20,13 @@ h2 {
 img {
     width: 100%;
 }
+    
+a {
+    background-color: rgba(67, 67, 94, 0.226);
+}
 
-a:hover {
-    transform: scale(1.5);
+.nav-items a {
+    background-color: transparent;
 }
 
 .header-container {
@@ -34,6 +38,7 @@ a:hover {
 #top {
     color: white;
 }
+
 
 .header-container p {
     color: white;
@@ -156,7 +161,6 @@ a:hover {
 
     .nav-items.top a {
         color: white;
-        transform: scale (1.5);
     }
 
 
@@ -257,6 +261,18 @@ a:hover {
     }
     .project p {
         margin: 0 20px;
+    }
+
+    .skills-container {
+        align-items:flex-start;
+    }
+
+    .skills-item li {
+        display: block;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .contact {
         max-width: 60%;
