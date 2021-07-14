@@ -20,8 +20,9 @@ h2 {
 img {
     width: 100%;
 }
-    
-a {
+
+
+a:hover {
     background-color: rgba(67, 67, 94, 0.226);
 }
 
